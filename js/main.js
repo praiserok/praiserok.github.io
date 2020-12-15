@@ -6,7 +6,6 @@ navigation.forEach((el) => {
   el.addEventListener('click', function (event) {
     var target = document.querySelector(this.getAttribute("href"));
     var why = target.offsetTop - heightHeaderTop + 1
-
     if (target != null) {
       event.preventDefault();
       window.scrollTo(0, why);
@@ -17,7 +16,13 @@ navigation.forEach((el) => {
 window.addEventListener('scroll', () => {
   let scrollBlock = document.querySelectorAll('.scroll')
   scrollBlock.forEach((el, i) => {
-    if (el.offsetTop - heightHeaderTop <= window.scrollY) {
+    let sizeBody = document.body.scrollHeight
+    let sizeScreen = window.screen.availHeight
+    // console.log('Розмір екранк:' + window.screen.availHeight)
+    // console.log("CКрол:" + window.scrollY)
+    // console.log("Body:" + sizeBody)
+    // console.log("xz:" + (sizeBody - sizeScreen))
+    if (el.offsetTop - heightHeaderTop <= window.scrollY || window.scrollY >= sizeBody - sizeScreen) {
       navigation.forEach((el) => {
         if (el.classList.contains('active')) {
           el.classList.remove('active');

@@ -141,7 +141,13 @@ body {
 }
 
 .block2 {
+  height: 800px;
   background-color: #eaeaea;
+}
+
+.block3 {
+  height: 800px;
+  background-color: grey;
 }
 
 .block4 {
@@ -150,12 +156,7 @@ body {
 }
 
 .block5 {
-  height: 800px;
+  height: 200px;
   background-color: red;
-}
-
-.block6 {
-  height: 800px;
-  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
