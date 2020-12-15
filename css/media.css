@@ -1,0 +1,19 @@
+@media screen and (max-width: 500px) {
+  .header-top {
+    font-size: 9px;
+  }
+  .header-nav__link {
+    padding: 0 10px;
+  }
+  .countdown-number {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+  }
+  .header-title {
+    font-size: 1em;
+  }
+  .header-data span {
+    font-size: 0.5em;
+  }
+}
