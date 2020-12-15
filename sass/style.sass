@@ -1,0 +1,118 @@
+$heigt-top: 40px
+
+*, *:before, *:after
+  box-sizing: border-box
+  scroll-behavior: smooth
+body
+  font-size: 18px
+  font-family: 'Exo 2', sans-serif
+  margin: 0
+  padding: 0
+
+.black-fon
+  background: rgba(0,0,0,0.7)
+  height: 100%
+  display: grid
+  grid-template-columns: 1fr 5fr 1fr
+  grid-template-areas: "header-top header-top header-top" ". header-text ."
+  grid-template-rows: 1fr 6fr
+  grid-column-gap: 10px
+.header
+  background: url(../img/head3.jpg) no-repeat center / cover
+  background-attachment: fixed
+  height: 100vh
+  color: #fff
+  &-top
+    position: fixed
+    top: 0
+    width: 100%
+    font-size: 14px
+    height: $heigt-top
+    display: grid
+    grid-template-columns: 1fr 5fr 1fr
+    grid-area: header-top
+    grid-template-areas: "header-logo header-nav header-language"
+    // background: rgba(34,34,34,.2)
+    backdrop-filter: blur(5px)
+  &-logo
+    grid-area: header-logo
+    justify-self: center
+    align-self: center
+    img
+      height: $heigt-top - 5px
+  &-nav
+    grid-area: header-nav
+    display: flex
+    // justify-content: space-around
+    justify-content: center
+    align-items: center
+    &__link
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+      line-height: $heigt-top
+      padding: 0 20px
+      transition: .3s linear
+      @at-root &:hover, .active
+        background: rgba(0,0,0,.4)
+      &:active
+        background: rgba(0,0,0,.7)
+  &-language
+    grid-area: header-language
+    justify-self: center
+    align-self: center
+    a
+      color: red
+      font-weight: 800
+      text-decoration: none
+      // font-size: 10px
+  &-text
+    grid-area: header-text
+    text-align: center
+    display: grid
+    grid-template-rows: 0.1fr 1fr 1fr
+    align-items: center
+    grid-row-gap: 10px
+    h1
+      margin: 0
+  &-data
+    span
+      text-transform: uppercase
+      padding: 8px
+      background-color: red
+.block2
+  // height: 800px
+  background-color: #eaeaea
+  // padding-top: $heigt-top
+  // margin-top: -$heigt-top
+  // -webkit-background-clip: content-box
+  // background-clip: content-box
+.block3
+  // height: 900px
+  // background-color: black
+  // padding-top: $heigt-top
+  // margin-top: -$heigt-top
+  // -webkit-background-clip: content-box
+  // background-clip: content-box
+.block4
+  height: 1200px
+  background-color: yellow
+  // padding-top: $heigt-top
+  // margin-top: -$heigt-top
+  // -webkit-background-clip: content-box
+  // background-clip: content-box
+.block5
+  height: 800px
+  background-color: red
+  // padding-top: $heigt-top
+  // margin-top: -$heigt-top
+  // -webkit-background-clip: content-box
+  // background-clip: content-box
+.block6
+  height: 800px
+  background-color: green
+  // padding-top: $heigt-top
+  // margin-top: -$heigt-top
+  // -webkit-background-clip: content-box
+  // background-clip: content-box
+

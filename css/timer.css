@@ -1,0 +1,28 @@
+.countdown {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  text-align: center;
+}
+
+.countdown-number {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countdown-time {
+  font-size: 30px;
+}
+
+.countdown-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* МЕНЮ НА ТЕСТ */

@@ -1,0 +1,268 @@
+/**Загальні речі**/
+html{
+  font-size: 18px;
+  font-family: 'Exo 2', sans-serif;
+  }
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+a {
+  color: #000;
+}
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* Шапка */
+/*меню*/
+.header {
+  background-color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  box-shadow: 1px 2px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+.head{
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.header li a {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0px 2px 20px;
+  border-bottom: 1px solid red;
+  text-decoration: none;
+} 
+.header li a:hover,
+.header .menu-btn:hover {
+  color: red;
+    -webkit-transition: all 233ms ease-out;
+    -moz-transition: all 233ms ease-out;
+     -o-transition: all 233ms ease-out;
+  transition: all 233ms ease-out;
+}
+body .header li:last-child a{
+  border-bottom: none;
+}
+.language a{
+  color: blue;
+  font-weight: bold;
+}
+.header .language a:hover{
+  color: #000;
+}
+.anchor{
+  padding-top: 48px;
+  margin-top: -48px;
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
+}
+/*логотипи*/
+.logo{
+  display: none;
+}
+.logosmall{
+  display: block;
+  float: left;
+}
+.header .logosmall p{
+  font-size: 16px;
+  margin: 0;
+  float: left;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.header .logosmall a img{
+  float: left;
+  height: 40px;
+  padding: 4px 5px 4px 5px;
+}
+/*секції*/
+.main{
+  background: url(../img/head3.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 480px;
+  color: #fff;
+  text-align: center;
+}
+.black_fon{
+  background: rgba(0,0,0,0.7);
+  height: 100%;
+}
+.main h1 { 
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 60px 10px 0 10px;
+}
+.main h1 span{
+  font-size: 1.8rem;
+}
+.main h1 i{
+  font-size: 0.8rem;
+}
+.main h3{
+  font-weight: 100;
+  font-size: 0.6rem;
+  color: #DCD118;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.button{
+  width: 100%;
+  float: left;
+  padding-top:10px;
+}
+.br{
+  background: #d80b0b;
+}
+.br:hover{
+  background: #B70C0C;
+}
+.bg{
+  background: #008000;
+}
+.bg:hover{
+  background: #006400;
+}
+.button img{
+  height: 40px; 
+  padding-right: 5px;
+}
+.button a{
+  vertical-align: top;
+  line-height: 40px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #eaeaea;
+}
+.button a:hover{
+color: #fff;
+}
+.button i{
+font-size: 0.5rem;
+}
+/* 2 блок*/
+h2{
+  margin: 0;
+}
+.secinfo{
+  padding: 5px 5px 0 5px;
+  background: #EAEAEA;
+}
+section h2{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d80b0b;
+  text-align: center;
+  text-transform: uppercase;
+}
+.secinfo p{
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 13px;
+}
+.secinfo span {
+    line-height: 1.2;
+    color: #222;
+  margin-left: 5px;
+  display: block;
+font-style: italic;
+}
+.secinfo span:before{
+  content: "✓  ";
+}
+.secinfo h3{
+  margin: 5px 0 3px 0;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.categoria{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0px;
+}
+.categoria_item{
+  text-align: center;
+  align-self: end;
+}
+.catimg_item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.catimgr{
+  text-align: right;
+}
+.catimgl{
+  text-align: left;
+}
+.cattext {
+    padding-top: 10px;
+    font-size: 16px;
+}
+.cattextinfo{
+  color: #777;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5px;
+  padding: 5px 0 15px 0;
+}
+.cattextinfo p {
+    padding-top: 5px;
+}
+
+.categoria_item:nth-child(4) img{
+  height: 60px;
+}
+.categoria_item:nth-child(3) img{
+  height: 100px;
+}
+.categoria_item:nth-child(2) img{
+  height: 140px;
+}
+.categoria_item:nth-child(1) img{
+  height: 180px;
+}
+
+
+.vide{
+padding: 10px 0 30px 0;
+}
+.vide{
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 20px;
+}
+.vid {
+    margin: 0 auto;
+    width: 90%;
+    height: 180px;
+}
+.partner{
+background-color: #000;
+  color: #fff;
+  height: 200px;
+}
+.contakt{
+  background-color: #235;
+  color: yellow;
+  height: 200px;
+}
